@@ -55,7 +55,6 @@ try {
         }
 catch {
 }
-как это сделать dll и исправь ошибки если есть
 Clear-Host
 Write-Host ""
 Write-Host "=======================================================" -ForegroundColor Red
@@ -122,3 +121,4 @@ Write-Host "ЗАПУСК УСПЕШЕН! Наслаждайся функциям
 Write-Host ""
 Write-Host "Нажми любую клавишу для выхода..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
